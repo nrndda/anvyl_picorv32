@@ -1,0 +1,6 @@
+[submodule "picorv32"]
+	path = rtl/picorv32
+	url = git@github.com:nrndda/picorv32.git
+[submodule "mor1kx"]
+	path = rtl/mor1kx
+	url = https://github.com/openrisc/mor1kx.git
