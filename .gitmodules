@@ -4,3 +4,6 @@
 [submodule "mor1kx"]
 	path = rtl/mor1kx
 	url = https://github.com/openrisc/mor1kx.git
+[submodule "or1200"]
+	path = rtl/or1200
+	url = https://github.com/openrisc/or1200.git
