@@ -7,3 +7,21 @@
 [submodule "or1200"]
 	path = rtl/or1200
 	url = https://github.com/openrisc/or1200.git
+[submodule "adv_debug_sys"]
+	path = rtl/components/adv_debug_sys
+	url = https://github.com/olofk/adv_debug_sys.git
+[submodule "diila"]
+	path = rtl/components/diila
+	url = https://github.com/skristiansson/diila.git
+[submodule "jtag_tap"]
+	path = rtl/components/jtag_tap
+	url = https://github.com/olofk/jtag.git
+[submodule "simple_spi"]
+	path = rtl/components/simple_spi
+	url = https://github.com/olofk/simple_spi.git
+[submodule "uart16550"]
+	path = rtl/components/uart16550
+	url = https://github.com/olofk/uart16550.git
+[submodule "verilog-arbiter"]
+	path = rtl/components/verilog-arbiter
+	url = https://github.com/bmartini/verilog-arbiter.git

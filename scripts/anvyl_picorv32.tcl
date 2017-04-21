@@ -5,23 +5,23 @@ project set device xc6slx45
 project set package csg484
 project set speed -3
 project set "Generate Detailed MAP Report" true
-project set "Verilog Include Directories" "../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog|../rtl/mor1kx/rtl/verilog|../rtl/components/verilog_utils_0/|../rtl/components/wb_common_1.0/|../rtl/include|../rtl/wishbone" -process "Synthesize - XST"
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_wb_biu.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_status_reg.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_jsp_biu.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_module.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/syncflop.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_crc32.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_jsp_module.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_top.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/bytefifo.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_biu.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_defines.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/syncreg.v
-xfile add ../rtl/components/adv_debug_sys_0/Hardware/adv_dbg_if/rtl/verilog/adbg_wb_module.v
-xfile add ../rtl/components/diila_0/rtl/verilog/diila.v
+project set "Verilog Include Directories" "../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog|../rtl/mor1kx/rtl/verilog|../rtl/components/verilog_utils_0/|../rtl/components/wb_common_1.0/|../rtl/include|../rtl/wishbone" -process "Synthesize - XST"
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_wb_biu.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_status_reg.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_jsp_biu.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_module.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/syncflop.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_crc32.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_jsp_module.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_top.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/bytefifo.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_biu.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_or1k_defines.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/syncreg.v
+xfile add ../rtl/components/adv_debug_sys/Hardware/adv_dbg_if/rtl/verilog/adbg_wb_module.v
+xfile add ../rtl/components/diila/rtl/verilog/diila.v
 xfile add ../rtl/components/gpio_0/gpio.v
-xfile add ../rtl/components/jtag_tap_1.13/tap/rtl/verilog/tap_top.v
+xfile add ../rtl/components/jtag_tap/tap/rtl/verilog/tap_top.v
 xfile add ../rtl/mor1kx/rtl/verilog/mor1kx_branch_prediction.v
 xfile add ../rtl/mor1kx/rtl/verilog/mor1kx_bus_if_avalon.v
 xfile add ../rtl/mor1kx/rtl/verilog/mor1kx_bus_if_wb32.v
@@ -58,19 +58,19 @@ xfile add ../rtl/mor1kx/rtl/verilog/mor1kx_true_dpram_sclk.v
 xfile add ../rtl/mor1kx/rtl/verilog/mor1kx.v
 xfile add ../rtl/mor1kx/rtl/verilog/mor1kx_wb_mux_cappuccino.v
 xfile add ../rtl/mor1kx/rtl/verilog/mor1kx_wb_mux_espresso.v
-xfile add ../rtl/components/simple_spi_1.6/rtl/verilog/fifo4.v
-xfile add ../rtl/components/simple_spi_1.6/rtl/verilog/simple_spi_top.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/raminfr.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/uart_debug_if.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/uart_receiver.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/uart_regs.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/uart_rfifo.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/uart_sync_flops.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/uart_tfifo.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/uart_top.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/uart_transmitter.v
-xfile add ../rtl/components/uart16550_1.5/rtl/verilog/uart_wb.v
-xfile add ../rtl/components/verilog-arbiter_0-r1/src/arbiter.v
+xfile add ../rtl/components/simple_spi/rtl/verilog/fifo4.v
+xfile add ../rtl/components/simple_spi/rtl/verilog/simple_spi_top.v
+xfile add ../rtl/components/uart16550/rtl/verilog/raminfr.v
+xfile add ../rtl/components/uart16550/rtl/verilog/uart_debug_if.v
+xfile add ../rtl/components/uart16550/rtl/verilog/uart_receiver.v
+xfile add ../rtl/components/uart16550/rtl/verilog/uart_regs.v
+xfile add ../rtl/components/uart16550/rtl/verilog/uart_rfifo.v
+xfile add ../rtl/components/uart16550/rtl/verilog/uart_sync_flops.v
+xfile add ../rtl/components/uart16550/rtl/verilog/uart_tfifo.v
+xfile add ../rtl/components/uart16550/rtl/verilog/uart_top.v
+xfile add ../rtl/components/uart16550/rtl/verilog/uart_transmitter.v
+xfile add ../rtl/components/uart16550/rtl/verilog/uart_wb.v
+xfile add ../rtl/components/verilog-arbiter/src/arbiter.v
 xfile add ../rtl/components/wb_intercon_1.0/rtl/verilog/wb_arbiter.v
 xfile add ../rtl/components/wb_intercon_1.0/rtl/verilog/wb_data_resize.v
 xfile add ../rtl/components/wb_intercon_1.0/rtl/verilog/wb_upsizer.v
